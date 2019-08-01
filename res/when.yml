@@ -1,0 +1,7 @@
+---
+- name: if条件
+  hosts: localhost
+  tasks:
+  - name:
+    shell: echo "Hello World"
+    when: a == '10'

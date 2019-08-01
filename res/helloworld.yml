@@ -1,0 +1,9 @@
+---
+- name:
+  hosts: huanggai
+  remote_user: deploy
+  tasks:
+  - name: Hello World版本的playbook
+    hello:
+      name: "{{ item }}"
+    with_items: ["licong",caobo]
